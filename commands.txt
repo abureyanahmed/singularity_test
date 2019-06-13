@@ -1,0 +1,22 @@
+scp abureyanahmed@lectura.cs.arizona.edu:/home/abureyanahmed/hangchen/ubuntu.img ./
+singularity exec ubuntu.img g++ test.cpp -lCGAL -o test -frounding-math
+singularity exec ubuntu.img ./test
+--------------------------------------------------------------------------------------------
+https:/singularity.lbl.gov/quickstart
+--------------------------------------------------------------------------------------------
+
+create an image that has torch
+run it in hpc
+
+Xsudo singularity build -w torch.img Singularity
+sudo singularity shell --writable torch.img
+--------------------------------------------------------------------------------------------
+checke os version:
+lsb_release -a
+sudo singularity build -w cgal.img hpc_cgal_recipes.txt
+sudo singularity shell --writable cgal.img
+
+https://www.cgal.org/FAQ.html#debian_demos
+
+export LC_ALL=C
+pip3 install networkx
