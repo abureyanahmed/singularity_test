@@ -1,0 +1,30 @@
+Install vagrant
+
+1. brew cask install virtualbox
+2. brew cask install vagrant
+3. brew cask install vagrant-manager
+
+
+-----------------------------------------------------------------------------------------------------
+
+create a directory
+
+1. mkdir singularity-vm
+2. cd singularity-vm
+
+bring up the virtual machine
+
+1. vagrant init singularityware/singularity-2.4
+2. vagrant up
+
+destroy the virtual machine!!!!!!!!
+
+!!!!!!!!!!!!! vagrant destroy !!!!!!!!!!!!!!!!
+
+------------------------------------------------------------------------------------------------------
+
+Enter and exit
+
+1. vagrant ssh
+2. exit
+
